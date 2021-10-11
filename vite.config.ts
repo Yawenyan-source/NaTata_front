@@ -7,7 +7,7 @@ export default defineConfig({
     host: 'localhost',
     port: 8080,
     open: false,
-    https: false,
+    https: true,
     proxy: {
       '/api': {
         ws:false,

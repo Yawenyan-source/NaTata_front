@@ -24,8 +24,8 @@
 <script setup lang="ts">
 import {reactive, ref, unref} from "vue"
 import {ElMessage, ElLoading} from 'element-plus'
-import {postRequest} from '../utils/api'
-import {router} from "../routers";
+import router from "../router";
+import {postRequest} from "../utils/http/axios/axios";
 
 let captchaUrl = ref('/api/captcha?time=' + new Date())
 
@@ -56,23 +56,28 @@ const rules = reactive({
 	}]
 })
 const LoginSubmit = async () => {
-	const form = unref(LoginFormRef);
+	const form: any = unref(LoginFormRef);
+	//登录请求参数
+	const LoginParams = {
+		username: LoginForm.username,
+		password: LoginForm.password,
+		code: LoginForm.code
+	}
 	const loading = ElLoading.service({
 		lock: true,
 		text: 'Loading',
 		spinner: 'el-icon-loading',
 		background: 'rgba(0, 0, 0, 0.7)',
-	});
+	})
 	if (!form) return
 	try {
 		await form.validate();
-		postRequest('/api/login', LoginForm).then(resp => {
+		postRequest('/api/login1', LoginParams).then(resp => {
 			if (resp) {
 				//存储用户token
-				const tokenStr: string = resp.obj.tokenHead + resp.obj.token;
+				const tokenStr: string = resp.data.obj.tokenHead + resp.data.obj.token;
 				window.sessionStorage.setItem('tokenStr', tokenStr)
 				router.replace('/home')
-				loading.close();
 			}
 		})
 	} catch (e) {
@@ -80,6 +85,8 @@ const LoginSubmit = async () => {
 			message: '请输入所有字段',
 			type: 'error'
 		})
+	} finally {
+		loading.close();
 	}
 }
 

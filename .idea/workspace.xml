@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1799c1f-e96a-441e-8c44-99adb950bfc8" name="Changes" comment="完成登录请求前后台对接">
+    <list default="true" id="a1799c1f-e96a-441e-8c44-99adb950bfc8" name="Changes" comment="完成登录请求前后台对接,正常调到home页面">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/node_modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/axios.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/http/axios/axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Test1.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Test2.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/natata_front.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/natata_front.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +34,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -39,6 +49,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/element-plus/lib/components/table/index.d.ts" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
     <bower.json value="" />
@@ -52,9 +65,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.10.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.10.0" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -65,9 +82,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/types" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/views" />
+      <recent name="$PROJECT_DIR$/src/utils/http/axios" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -120,7 +146,18 @@
       <workItem from="1633832887557" duration="1694000" />
       <workItem from="1633834602337" duration="432000" />
       <workItem from="1633835422030" duration="2000" />
-      <workItem from="1633841028774" duration="8172000" />
+      <workItem from="1633841028774" duration="11011000" />
+      <workItem from="1633852854470" duration="13263000" />
+      <workItem from="1633866159993" duration="1201000" />
+      <workItem from="1633867382443" duration="10811000" />
+      <workItem from="1633921969855" duration="2698000" />
+      <workItem from="1633925200323" duration="47000" />
+      <workItem from="1633925270888" duration="1002000" />
+      <workItem from="1633926884611" duration="152000" />
+      <workItem from="1633927048444" duration="268000" />
+      <workItem from="1633927375984" duration="1967000" />
+      <workItem from="1633931914576" duration="12548000" />
+      <workItem from="1633944575384" duration="4660000" />
     </task>
     <task id="LOCAL-00001" summary="登录页面完成,规则校验">
       <created>1633188436366</created>
@@ -143,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633832213410</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成登录请求前后台对接,正常调到home页面">
+      <created>1633849626573</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633849626573</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,13 +206,20 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="登录页面完成,规则校验" />
     <MESSAGE value="创建vue.config.js,配置请求转发跨域" />
     <MESSAGE value="完成登录请求前后台对接" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成登录请求前后台对接" />
+    <MESSAGE value="完成登录请求前后台对接,正常调到home页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成登录请求前后台对接,正常调到home页面" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
+    <expand>
+      <path>
+        <item name="NaTata_front" type="b2602c69:ProjectViewProjectNode" />
+        <item name="NaTata_front" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
     <select />
   </component>
 </project>
