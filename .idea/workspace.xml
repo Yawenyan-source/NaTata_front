@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1799c1f-e96a-441e-8c44-99adb950bfc8" name="Changes" comment="完成登录请求前后台对接,正常调到home页面">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/node_modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/axios.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/http/axios/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Test1.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Test2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/natata_front.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/natata_front.iml" afterDir="false" />
+    <list default="true" id="a1799c1f-e96a-441e-8c44-99adb950bfc8" name="Changes" comment="完善axios请求">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/http/axios/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/http/axios/axios.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +142,7 @@
       <workItem from="1633927375984" duration="1967000" />
       <workItem from="1633931914576" duration="12548000" />
       <workItem from="1633944575384" duration="4660000" />
+      <workItem from="1633949642111" duration="2642000" />
     </task>
     <task id="LOCAL-00001" summary="登录页面完成,规则校验">
       <created>1633188436366</created>
@@ -187,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633849626573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完善axios请求">
+      <created>1633950002512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633950002512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +203,8 @@
     <MESSAGE value="创建vue.config.js,配置请求转发跨域" />
     <MESSAGE value="完成登录请求前后台对接" />
     <MESSAGE value="完成登录请求前后台对接,正常调到home页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成登录请求前后台对接,正常调到home页面" />
+    <MESSAGE value="完善axios请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善axios请求" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

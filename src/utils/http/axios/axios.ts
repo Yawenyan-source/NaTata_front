@@ -1,4 +1,4 @@
-import axios, {AxiosPromise, AxiosRequestConfig} from "axios";
+import axios, {AxiosPromise} from "axios";
 import {ElMessage} from "element-plus";
 import router from "../../../router";
 import {AxiosResponse} from "../../../types/axios";
@@ -33,7 +33,6 @@ instance.interceptors.request.use((config: any) => {
  */
 instance.interceptors.response.use(
     (response: any) => {
-        // console.log(response);
         const statusCode = response.status;
         //业务逻辑错误,服务器正常,给出的错误码
         if (statusCode && statusCode === 200) {
@@ -56,8 +55,8 @@ instance.interceptors.response.use(
     }, (error: any) => {
         console.log(error.response);
         //服务器出现问题,状态码
-        if (error.response.code === 504 ||
-            error.response.code === 404) {
+        if (error.response.status === 504 ||
+            error.response.status === 404) {
             ElMessage.error({
                 message: '服务器被吃了QAQ'
             })
@@ -72,7 +71,6 @@ instance.interceptors.response.use(
             //跳转到登录页
             router.push('/').then()
         } else {
-            console.log(error.response);
             if (error.response) {
                 ElMessage.error({
                     message: error.response.data.message
