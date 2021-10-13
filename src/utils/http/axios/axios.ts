@@ -1,7 +1,7 @@
-import axios, {AxiosPromise} from "axios";
+import axios, {AxiosPromise, AxiosResponse} from "axios";
 import {ElMessage} from "element-plus";
 import router from "../../../router";
-import {AxiosResponse} from "../../../types/axios";
+import {MyAxiosResponse} from "../../../types/axios";
 
 let base = ''
 const instance = axios.create({
@@ -32,7 +32,8 @@ instance.interceptors.request.use((config: any) => {
  * 响应拦截器
  */
 instance.interceptors.response.use(
-    (response: any) => {
+    (response: AxiosResponse<any>) => {
+        console.log(response);
         const statusCode = response.status;
         //业务逻辑错误,服务器正常,给出的错误码
         if (statusCode && statusCode === 200) {
@@ -86,10 +87,10 @@ instance.interceptors.response.use(
 
 /**
  * 创建json格式的post请求
- * @param url
- * @param params
+ * @param url url地址
+ * @param params 请求参数
  */
-export const postRequest = (url: string, params: any): AxiosPromise<AxiosResponse> => {
+export const postRequest = (url: string, params: any): AxiosPromise<MyAxiosResponse> => {
     return instance.post(
         `${base}${url}`,
         params,
@@ -97,10 +98,10 @@ export const postRequest = (url: string, params: any): AxiosPromise<AxiosRespons
 }
 /**
  * 创建json格式的get请求
- * @param url
- * @param params
+ * @param url url地址
+ * @param params 请求参数
  */
-export const getRequest = (url: string, params: any): AxiosPromise<AxiosResponse> => {
+export const getRequest = (url: string, params: any): AxiosPromise<MyAxiosResponse> => {
     return instance.get(
         `${base}${url}`,
         params,
@@ -108,10 +109,10 @@ export const getRequest = (url: string, params: any): AxiosPromise<AxiosResponse
 }
 /**
  * 创建json格式的put请求
- * @param url
- * @param params
+ * @param url url地址
+ * @param params 请求参数
  */
-export const putRequest = (url: string, params: any): AxiosPromise<AxiosResponse> => {
+export const putRequest = (url: string, params: any): AxiosPromise<MyAxiosResponse> => {
     return instance.put(
         `${base}${url}`,
         params,
@@ -119,10 +120,10 @@ export const putRequest = (url: string, params: any): AxiosPromise<AxiosResponse
 }
 /**
  * 创建json格式的delete请求
- * @param url
- * @param params
+ * @param url url地址
+ * @param params 请求参数
  */
-export const deleteRequest = (url: string, params: any): AxiosPromise<AxiosResponse> => {
+export const deleteRequest = (url: string, params: any): AxiosPromise<MyAxiosResponse> => {
     return instance.delete(
         `${base}${url}`,
         params,

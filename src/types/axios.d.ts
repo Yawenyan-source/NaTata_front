@@ -27,7 +27,7 @@ export interface RequestOptions {
     withToken?: boolean;
 }
 
-export interface AxiosResponse<T = never> {
+export interface MyAxiosResponse {
     code: number
     message:string
     obj:any

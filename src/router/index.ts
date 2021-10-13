@@ -1,21 +1,17 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
-
-const routes: RouteRecordRaw[] = [
+import {RouteConfig} from "../types/route";
+const routes: RouteConfig[] = [
     {
         path: "/",
         name: 'Login',
         component: () => import('../views/Login.vue'),
-        meta: {
-            hasSubMenu: false
-        }
+        hidden:false,
     },
     {
         path: "/home",
         name: '导航1',
         component: () => import('../views/Home.vue'),
-        meta: {
-            hasSubMenu: true
-        },
+        hidden:true,
         children: [
             {
                 path: "/test1",

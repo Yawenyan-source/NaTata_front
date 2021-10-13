@@ -8,12 +8,8 @@
 			<el-input type="password" v-model="LoginForm.password" placeholder="请输入密码"/>
 		</el-form-item>
 		<el-form-item prop="code">
-			<el-input
-				type="text"
-				v-model="LoginForm.code"
-				placeholder="点击图片更换验证码"
-				style="width: 250px; margin-right: 5px"
-			/>
+			<el-input type="text" v-model="LoginForm.code" placeholder="点击图片更换验证码"
+					  style="width: 250px; margin-right: 5px"/>
 			<img :src="captchaUrl" @click="updateCaptcha" alt="验证码"/>
 		</el-form-item>
 		<el-checkbox v-model="checked" class="loginRemember">记住我</el-checkbox>
@@ -24,8 +20,10 @@
 <script setup lang="ts">
 import {reactive, ref, unref} from "vue"
 import {ElMessage, ElLoading} from 'element-plus'
-import router from "../router";
 import {postRequest} from "../utils/http/axios/axios";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
 
 let captchaUrl = ref('/api/captcha?time=' + new Date())
 
@@ -63,21 +61,27 @@ const LoginSubmit = async () => {
 		password: LoginForm.password,
 		code: LoginForm.code
 	}
+	//loading状态
 	const loading = ElLoading.service({
 		lock: true,
 		text: 'Loading',
 		spinner: 'el-icon-loading',
 		background: 'rgba(0, 0, 0, 0.7)',
 	})
+	//如果form不存在,直接返回,存在,判断字段是否都填写
 	if (!form) return
 	try {
 		await form.validate();
-		postRequest('/api/login1', LoginParams).then(resp => {
+		postRequest('/api/login', LoginParams).then(resp => {
 			if (resp) {
+				console.log(resp);
 				//存储用户token
 				const tokenStr: string = resp.data.obj.tokenHead + resp.data.obj.token;
 				window.sessionStorage.setItem('tokenStr', tokenStr)
-				router.replace('/home')
+				router.replace({
+					name:'导航1',
+					path:'/home'
+				})
 			}
 		})
 	} catch (e) {
