@@ -1,23 +1,32 @@
 <script setup lang="ts">
+import {useStore} from "vuex";
+import {key} from "../store";
+import {toRaw} from "vue";
 import router from "../router";
 
-const routesInfo = router.options.routes
+const store = useStore(key);
+// const MenuRouter = computed(() => {
+// 	return store.state.routes
+// });
+const menuList = toRaw(store.state.routes);
 </script>
 <template>
 	<el-container>
 		<el-header>Header</el-header>
 		<el-container>
 			<el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-				<el-menu router>
-					<template v-for="(item,index) in routesInfo" :key="index">
-						<el-sub-menu index="1" v-if="item.hidden">
+				<el-menu router unique-opened>
+					<template v-for="(item,index) in menuList" :key="index">
+						<el-sub-menu :index="index+''" v-if="!item.meta.hidden">
 							<template #title>
-								<i class="el-icon-location"></i>
+								<i :class="item.meta.iconCls" style="color: #ff415c;margin-right: 5px"></i>
 								<span>{{ item.name }}</span>
 							</template>
 							<el-menu-item-group>
-								<el-menu-item :index="children.path" v-for="(children,index) in item.children"
-											  :key="index">
+								<el-menu-item
+									:index="children.path"
+									v-for="(children,index) in item.children"
+									:key="index">
 									{{ children.name }}
 								</el-menu-item>
 							</el-menu-item-group>

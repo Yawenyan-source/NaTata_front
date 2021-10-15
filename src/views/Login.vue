@@ -74,13 +74,12 @@ const LoginSubmit = async () => {
 		await form.validate();
 		postRequest('/api/login', LoginParams).then(resp => {
 			if (resp) {
-				console.log(resp);
+				// console.log(resp);
 				//存储用户token
 				const tokenStr: string = resp.data.obj.tokenHead + resp.data.obj.token;
 				window.sessionStorage.setItem('tokenStr', tokenStr)
 				router.replace({
-					name:'导航1',
-					path:'/home'
+					path: '/home',
 				})
 			}
 		})

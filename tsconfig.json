@@ -23,5 +23,6 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "vue.config.js"]
+    "vue.config.js",
+  ]
 }

@@ -1,27 +1,27 @@
-import axios, {AxiosPromise, AxiosResponse} from "axios";
-import {ElMessage} from "element-plus";
+import axios, { AxiosPromise, AxiosResponse } from "axios";
+import { ElMessage } from "element-plus";
 import router from "../../../router";
-import {MyAxiosResponse} from "../../../types/axios";
+import { MyAxiosResponse } from "../../../types/axios";
 
 let base = ''
 const instance = axios.create({
-    timeout: 1000
+    timeout: 10000
 });
 
 /**
  * 请求拦截器
  */
 instance.interceptors.request.use((config: any) => {
-        //如果存在token,请求携带这个token
-        const tokenStr = window.sessionStorage.getItem('tokenStr');
-        if (tokenStr) {
-            config.headers = {
-                'Authorization': tokenStr,
-                // 'Content-Type': 'application/x-www-form-urlencoded'
-            }
+    //如果存在token,请求携带这个token
+    const tokenStr = window.sessionStorage.getItem('tokenStr');
+    if (tokenStr) {
+        config.headers = {
+            'Authorization': tokenStr,
+            // 'Content-Type': 'application/x-www-form-urlencoded'
         }
-        return config
     }
+    return config
+}
     , error => {
         console.log(error);
     }
@@ -33,7 +33,7 @@ instance.interceptors.request.use((config: any) => {
  */
 instance.interceptors.response.use(
     (response: AxiosResponse<any>) => {
-        console.log(response);
+        // console.log(response);
         const statusCode = response.status;
         //业务逻辑错误,服务器正常,给出的错误码
         if (statusCode && statusCode === 200) {

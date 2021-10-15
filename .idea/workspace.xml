@@ -5,14 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1799c1f-e96a-441e-8c44-99adb950bfc8" name="Changes" comment="完善axios请求">
-      <change afterPath="$PROJECT_DIR$/src/types/route.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/menu/menus.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/emp/EmpAdv.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/emp/EmpBasic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/per/PerEc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/per/PerEmp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/per/PerMv.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/per/PerSalary.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/per/PerTrain.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sal/SalMonth.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sal/SalSearch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sal/SalSob.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sal/SalSobCfg.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sal/SalTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sta/StaAll.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sta/StaPers.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sta/StaRecord.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sta/StaScore.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/SysAdmin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/SysBasic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/SysConfig.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/SysData.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/SysInit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/SysLog.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/axios.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/axios.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/route.d.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/http/axios/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/http/axios/axios.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
         <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -62,8 +89,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="16.10.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="16.10.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.11.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.0" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -72,19 +99,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/emp" />
+      <recent name="$PROJECT_DIR$/src/views" />
       <recent name="$PROJECT_DIR$/src/types" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/views" />
-      <recent name="$PROJECT_DIR$/src/utils/http/axios" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -95,6 +123,7 @@
         <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="yarn" />
       <envs />
       <method v="2" />
     </configuration>
@@ -108,6 +137,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.serve" />
+      <item itemvalue="npm.dev" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
@@ -151,7 +184,14 @@
       <workItem from="1633931914576" duration="12548000" />
       <workItem from="1633944575384" duration="4660000" />
       <workItem from="1633949642111" duration="2642000" />
-      <workItem from="1634088829925" duration="6116000" />
+      <workItem from="1634088829925" duration="10017000" />
+      <workItem from="1634118311402" duration="11189000" />
+      <workItem from="1634184263590" duration="13290000" />
+      <workItem from="1634201935790" duration="2555000" />
+      <workItem from="1634204520363" duration="18786000" />
+      <workItem from="1634268759186" duration="8857000" />
+      <workItem from="1634279460090" duration="5606000" />
+      <workItem from="1634290393330" duration="12592000" />
     </task>
     <task id="LOCAL-00001" summary="登录页面完成,规则校验">
       <created>1633188436366</created>
@@ -195,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634088892321</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完善axios请求">
+      <created>1634095459479</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634095459479</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
